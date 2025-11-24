@@ -8,6 +8,10 @@ public class enemy: MonoBehaviour
     {
         Debug.Log("l'ennemi attaque!");
     }
+    private void Update()
+    {
+        
+    }
 }
 public class goblin : enemy
 {
