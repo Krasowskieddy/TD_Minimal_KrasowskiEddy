@@ -3,14 +3,15 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class enemy: MonoBehaviour
 {
-    
+    public GameObject player;
+    Vector2 direction = new Vector2((float)-0.5, 0);
     public virtual void attaque()
     {
         Debug.Log("l'ennemi attaque!");
     }
-    private void Update()
+    public void Movement()
     {
-        
+    
     }
 }
 public class goblin : enemy
@@ -30,14 +31,4 @@ public class squelette : enemy
         int atk = 2;
         Debug.Log("un squellette vous lance sa côte!");
     }
-}
-public class orc : enemy
-{
-    public override void attaque()
-    {
-        int lp = 100;
-        int atk = 3;
-        Debug.Log("un orc vous assome avec sa massue!");
-    }
-    
 }
