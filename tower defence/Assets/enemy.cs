@@ -3,15 +3,15 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class enemy: MonoBehaviour
 {
-    public GameObject player;
-    Vector2 direction = new Vector2((float)-0.5, 0);
+    
+    
     public virtual void attaque()
     {
         Debug.Log("l'ennemi attaque!");
     }
     public void Movement()
     {
-    
+        Vector2 direction = new Vector2((float)-0.5, 0);
     }
 }
 public class goblin : enemy
